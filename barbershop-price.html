@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Прайс-лист</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/png/logo.png" width="111" height="24" alt="Логотип барбершопа "Бородинский">
+                </a>
+                <ul class="site-navigation">
+                    <li><a href="info.html">информация</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li class="site-navigation-current"><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="user-navigation">
+                    <li>
+                        <a class="login-link" href="login.html">Вход</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <h1 class="page-title">Прайс-лист</h2>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs-current">Прайс-лист</li>
+            </ul>
+            <h2 class="tagline">Истинно мужская классика</h1>
+
+            <div class="price-column">
+                <section class="quality-products">
+                    <h3>Мы используем только лучшие средства:</h3>
+                    <ul class="quality-products-name">
+                        <li><p>Baxter of California</p></li>
+                        <li><p>Mr Natty</p></li>
+                        <li><p>Suavecito</p></li>
+                        <li><p>Malin+Goetz</p></li>
+                    </ul>
+                </section>
+
+                <section class="quality-products">
+                    <h3>Цены на услуги наших мастеров</h3>
+                    <table>
+                        <tr>
+                            <td>Стрижка</td>
+                            <td>1500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Стрижка бороды</td>
+                            <td>500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Накрутка усов</td>
+                            <td>350 ₽</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="price-column">
+                <section class="quality-products">
+                    <h3>Несколько слов о нас:</h3>
+                    <p>Наша парикмахерская занимается исключительно мужскими стрижками. 
+                    Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа.
+                    Мы не работаем на количество, мы делаем качество.</p>
+                </section>
+
+                <section class="quality-products">
+                    <p>Наша мастерская расположена в центре города, поэтому сделать 
+                    стильную стрижку можно в любое время, даже в обеденный перерыв. 
+                    Здесь вы можете погрузиться в удобную для вас атмосферу, 
+                    чувствовать себя комфортно и свободно!</p>
+                </section>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <p class="footer-contacts">
+                барбершоп "бородинский"<br>
+                адрес: г. санкт-петербург, ул. б. конюшенная, д.19/8<br>
+                <a href="map.html">как нас найти?</a><br>
+                телефон: +7 (812) 666-02-66
+            </p>
+            <div class="footer-social">
+                <p>давайте дружить!</p>
+                <ul class="">
+                    <li><a class="social-button" href="#">
+                        <img src="img/png/vk.png" alt="Вконтакте">
+                    </a></li>
+                    <li><a class="social-button" href="#">
+                        <img src="img/png/facebook.png" alt="Фейсбук">
+                    </a></li>
+                    <li><a class="social-button" href="#">
+                        <img src="img/png/instagram.png" alt="Инстаграм">
+                    </a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                разработано:
+                <a class="button" href="https://htmlacademy.ru">html academy</a>
+            </p>
+        </footer>
+    
+        <section class="modal modal-login">
+            <h2>личный кабинет</h2>
+            <p>введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="#" method="post">
+                <fieldset>
+                    <div>
+                        <input class="login-form-user" type="text" id="username" name="username"
+                         placeholder="логин" required>
+                    </div>
+                    <div>
+                        <input class="login-form-password" type="password" id="password" name="password"
+                         placeholder="пароль" required>
+                    </div>
+                    <div>
+                        <input class="login-form-checkbox" type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me">запомни меня</label>
+                    </div>
+                    <a class="restore" href="#">я забыл пароль!</a>
+                    <button class="button" type="submit">войти</button>
+                </fieldset>
+            </form>
+            <button class="modal-close" type="button">закрыть</button>
+        </section>
+    
+        <section class="modal modal-map">
+            <h2>как до нас добраться</h2>
+            <p>
+                <img src="img/jpg/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая конюшенная
+                19/8, Санкт-Петербург">
+            </p>
+            <button class="modal-close" type="button">закрыть</button>
+        </section>
+    </body>
+</html>
