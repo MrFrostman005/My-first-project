@@ -1,0 +1,2 @@
+User-agent: allfileshas.txt barbershop-item.html barbershop-price.html barbershop-shop.html css img index.html node_modules package-lock.json package.json
+Disallow: /
