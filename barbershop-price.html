@@ -172,36 +172,43 @@
         </footer>
     
         <section class="modal modal-login">
-            <h2>личный кабинет</h2>
-            <p>введите пожалуйста свой логин и пароль</p>
+            <h2>Личный кабинет</h2>
+            <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
             <form class="login-form" action="#" method="post">
-                <fieldset>
-                    <div>
-                        <input class="login-form-user" type="text" id="username" name="username"
-                         placeholder="логин" required>
-                    </div>
-                    <div>
-                        <input class="login-form-password" type="password" id="password" name="password"
-                         placeholder="пароль" required>
-                    </div>
-                    <div>
-                        <input class="login-form-checkbox" type="checkbox" id="remember-me" name="remember-me">
-                        <label for="remember-me">запомни меня</label>
-                    </div>
-                    <a class="restore" href="#">я забыл пароль!</a>
-                    <button class="button" type="submit">войти</button>
-                </fieldset>
+                <p>
+                    <label class="visually-hidden" for="username">Логин</label>
+                    <input class="login-icon-user" type="text" id="username" name="login"
+                        placeholder="Логин" required>
+                </p>
+                <p>
+                    <label class="visually-hidden" for="password">Пароль</label>
+                    <input class="login-icon-password" type="password" id="password" name="password"
+                        placeholder="Пароль" required>
+                </p>
+                <p class="login-help">
+                    <label class="login-checkbox">
+                        <input type="checkbox" name="remember" class="visually-hidden">
+                        <span class="checkbox-indicator"></span>
+                        Запомните меня
+                    </label>
+                    <a class="restore" href="#">Я забыл пароль!</a>
+                </p>
+                <button class="button" type="submit">Войти</button>
             </form>
-            <button class="modal-close" type="button">закрыть</button>
+            <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
         </section>
     
         <section class="modal modal-map">
-            <h2>как до нас добраться</h2>
+            <h2 class="visually-hidden">Как до нас добраться</h2>
             <p>
                 <img src="img/jpg/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая конюшенная
                 19/8, Санкт-Петербург">
             </p>
-            <button class="modal-close" type="button">закрыть</button>
+            <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
         </section>
     </body>
 </html>
