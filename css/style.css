@@ -1111,3 +1111,33 @@ input[type="radio"].visually-hidden {
     margin-right: calc(100%-460px);
 }
 
+/* Стили страницы товара */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.product-photos {
+    width: 460px;
+    margin-right: 90px;
+}
+
+.product-photos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0;
+}
+
+.full-img,
+.prewiew-img {
+    border: none;
+}
+
+.product-info {
+    width: 380px;
+}
