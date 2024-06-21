@@ -20,7 +20,7 @@
                             </a></li>
                             <li><a href="info.html">информация</a></li>
                             <li><a href="news.html">Новости</a></li>
-                            <li><a href="price.html">Прайс-лист</a></li>
+                            <li><a href="barbershop-price.html">Прайс-лист</a></li>
                             <li class="site-navigation-current"><a href="catalog.html"><span>Магазин</span></a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
@@ -49,48 +49,85 @@
                             <legend>Производители:</legend>
                             <ul class="manufacturer-list">
                                 <li class="filter-option">
-                                    <input class="filter-input-checkbox"
-                                    type="checkbox" name="Baxter-of-California" id="filter-Baxter-of-California" checked>
-                                    <label for="filter-Baxter-of-California">Baxter of California</label></li>
+                                    <label class="filter-checkbox" for="filter-Baxter-of-California">
+                                        <input class="visually-hidden"
+                                        type="checkbox" name="Baxter-of-California" 
+                                        id="filter-Baxter-of-California" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Baxter of California
+                                    </label>
+                                </li>
                                 <li class="filter-option">
-                                    <input class="filter-input-checkbox"
-                                    type="checkbox" name="Mr-Natty" id="filter-Mr-Natty">
-                                    <label for="filter-Mr-Natty">Mr Natty</label></li>
+                                    <label class="filter-checkbox" for="filter-Mr-Natty">
+                                        <input class="visually-hidden"
+                                        type="checkbox" name="Mr-Natty" id="filter-Mr-Natty">
+                                        <span class="checkbox-indicator"></span>
+                                        Mr Natty
+                                    </label>
+                                </li>
                                 <li class="filter-option">
-                                    <input class="filter-input-checkbox"
-                                    type="checkbox" name="Suavecito" id="filter-Suavecito" checked>
-                                    <label for="filter-Suavecito">Suavecito</label></li>
+                                    <label class="filter-checkbox" for="filter-Suavecito">
+                                        <input class="visually-hidden"
+                                        type="checkbox" name="Suavecito" id="filter-Suavecito" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Suavecito
+                                    </label>
+                                </li>
                                 <li class="filter-option">
-                                    <input class="filter-input-checkbox"
-                                    type="checkbox" name="Malin+Goetz" id="filter-Malin+Goetz">
-                                    <label for="filter-Malin+Goetz">Malin+Goetz</label></li>
+                                    <label class="filter-checkbox" for="filter-Malin+Goetz">
+                                        <input class="visually-hidden"
+                                        type="checkbox" name="Malin+Goetz" id="filter-Malin+Goetz">
+                                        <span class="checkbox-indicator"></span>
+                                        Malin+Goetz
+                                    </label>
+                                </li>
                                 <li class="filter-option">
-                                    <input class="filter-input-checkbox"
-                                    type="checkbox" name="Murray's" id="filter-Murray's">
-                                    <label for="filter-Murray's">Murray's</label></li>
+                                    <label class="filter-checkbox" for="filter-Murray's">
+                                        <input class="visually-hidden"
+                                        type="checkbox" name="Murray's" id="filter-Murray's">
+                                        <span class="checkbox-indicator"></span>
+                                        Murray's
+                                    </label>
+                                </li>
                                 <li class="filter-option">
-                                    <input class="filter-input-checkbox"
-                                    type="checkbox" name="American-Crew" id="filter-American-Crew" checked>
-                                    <label for="filter-American-Crew">American Crew</label></li>
+                                    <label class="filter-checkbox" for="filter-American-Crew">
+                                        <input class="visually-hidden"
+                                        type="checkbox" name="American-Crew" id="filter-American-Crew" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        American Crew
+                                    </label>
+                                </li>
                             </ul>
                         </fieldset>
                         <fieldset>
                             <legend>Группы товаров:</legend>
                             <ul class="product-group">
                                 <li class="filter-option">
-                                    <input class="filter-input-radio"
-                                    type="radio" name="product-group" value="shaving" id="filter-shaving">
-                                    <label for="filter-shaving">Бритвенные принадлежности</label>
+                                    <label class="filter-radio" for="filter-shaving">
+                                        <input class="visually-hidden"
+                                        type="radio" name="product-group" value="shaving" 
+                                        id="filter-shaving">
+                                        <span class="radio-indicator"></span>
+                                        Бритвенные<br> принадлежности
+                                    </label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="filter-input-radio"
-                                    type="radio" name="product-group" value="hair-care" id="filter-hair-care" checked>
-                                    <label for="filter-hair-care">Средства для ухода</label>
+                                    <label class="filter-radio" for="filter-hair-care">
+                                        <input class="visually-hidden"
+                                        type="radio" name="product-group" value="hair-care" 
+                                        id="filter-hair-care" checked>
+                                        <span class="radio-indicator"></span>
+                                        Средства для ухода
+                                    </label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="filter-input-radio"
-                                    type="radio" name="product-group" value="accessories" id="filter-accessories">
-                                    <label for="filter-accessories">Аксессуары</label>
+                                    <label class="filter-radio" for="filter-accessories">
+                                        <input class="visually-hidden"
+                                        type="radio" name="product-group" value="accessories" 
+                                        id="filter-accessories">
+                                        <span class="radio-indicator"></span>
+                                        Аксессуары
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -273,60 +310,44 @@
         </footer>
 
         <section class="modal modal-login">
-        <h2>личный кабинет</h2>
-        <p>введите пожалуйста свой логин и пароль</p>
-        <form class="login-form" action="#" method="post">
-            <fieldset>
-                <div>
-                    <input class="login-icon-user" type="text" id="username" name="username"
-                     placeholder="логин" required>
-                </div>
-                <div>
+            <h2>Личный кабинет</h2>
+            <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="#" method="post">
+                <p>
+                    <label class="visually-hidden" for="username">Логин</label>
+                    <input class="login-icon-user" type="text" id="username" name="login"
+                        placeholder="Логин" required>
+                </p>
+                <p>
+                    <label class="visually-hidden" for="password">Пароль</label>
                     <input class="login-icon-password" type="password" id="password" name="password"
-                     placeholder="пароль" required>
-                </div>
-                <div>
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    <label for="remember-me">запомни меня</label>
-                </div>
-                <a class="restore" href="#">я забыл пароль!</a>
-                <button class="button" type="submit">войти</button>
-            </fieldset>
-        </form>
-        <button type="button">закрыть</button>
-    </section>
+                        placeholder="Пароль" required>
+                </p>
+                <p class="login-help">
+                    <label class="login-checkbox">
+                        <input type="checkbox" name="remember" class="visually-hidden">
+                        <span class="checkbox-indicator"></span>
+                        Запомните меня
+                    </label>
+                    <a class="restore" href="#">Я забыл пароль!</a>
+                </p>
+                <button class="button" type="submit">Войти</button>
+            </form>
+            <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </section>
+    
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>
+                <img src="img/jpg/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая конюшенная
+                19/8, Санкт-Петербург">
+            </p>
+            <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </section>
 
-    <section class="modal modal-login">
-        <h2>личный кабинет</h2>
-        <p>введите пожалуйста свой логин и пароль</p>
-        <form class="login-form" action="#" method="post">
-            <fieldset>
-                <div>
-                    <input class="login-form-user" type="text" id="username" name="username"
-                     placeholder="логин" required>
-                </div>
-                <div>
-                    <input class="login-form-password" type="password" id="password" name="password"
-                     placeholder="пароль" required>
-                </div>
-                <div>
-                    <input class="login-form-checkbox" type="checkbox" id="remember-me" name="remember-me">
-                    <label for="remember-me">запомни меня</label>
-                </div>
-                <a class="restore" href="#">я забыл пароль!</a>
-                <button class="button" type="submit">войти</button>
-            </fieldset>
-        </form>
-        <button class="modal-close" type="button">закрыть</button>
-    </section>
-
-    <section class="modal modal-map">
-        <h2>как до нас добраться</h2>
-        <p>
-            <img src="img/jpg/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая конюшенная
-            19/8, Санкт-Петербург">
-        </p>
-        <button class="modal-close" type="button">закрыть</button>
-    </section>
     </body>
 </html>

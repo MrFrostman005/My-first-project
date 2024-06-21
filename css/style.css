@@ -1,6 +1,5 @@
 html {
     min-width: 1122px;
-    min-height: 1750px;
 }
 
 body {
@@ -20,7 +19,7 @@ body {
     background-repeat: no-repeat;
 
     min-width: 1122px;
-    min-height: 1750px;
+
 }
 
 .page-secondary {
@@ -28,7 +27,10 @@ body {
     background-image: url(../img/jpg/pattren-light.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+
 }
+
 
 a{
     text-decoration: none;
@@ -179,6 +181,8 @@ input[type="radio"].visually-hidden {
 
     display: block;
     padding: 25px 20px;
+
+    text-decoration: none;
 }
 
 .site-navigation li:first-child a {
@@ -683,6 +687,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li {
     margin-right: 40px;
+    display: inline;
 
     position: relative;
 }
@@ -733,7 +738,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-list {
-    margin-right: 70px;
+    margin-right: -40px;
 }
 
 .filter-list legend {
@@ -741,13 +746,15 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
 }
 
-.filter-list fieldset {
-    margin: 0;
+.filter-list ul {
+    display: flex;
+    flex-direction: column;
+
     padding: 0;
 }
 
-.filter-list ul {
-    padding: 0;
+.filter-list li {
+    padding: 8px 0;
 }
 
 .filter-list label {
@@ -757,6 +764,108 @@ input[type="radio"].visually-hidden {
 
 .filter-list fieldset {
     border: none;
+
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 30px;
+
+    display: inline-block;
+}
+
+.filter-radio {
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+    display: block;
+}
+
+.filter-radio input[type="radio"] + 
+.radio-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;;
+
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.filter-radio input[type="radio"]:focus + 
+.radio-indicator{
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-radio input[type="radio"]:checked + 
+.radio-indicator::before {
+
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background-color: #000000;
+}
+
+.filter-checkbox {
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"] + 
+.checkbox-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+}
+
+.filter-checkbox input[type="checkbox"]:focus + 
+.checkbox-indicator{
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::before,
+.filter-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.filter-checkbox input[type="checkbox"]:checked + 
+.checkbox-indicator::after {
+    transform: rotate(-45deg);
 }
 
 .catalog {
@@ -787,6 +896,8 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
 
     display: inline-block;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-item-price {
@@ -1135,9 +1246,82 @@ input[type="radio"].visually-hidden {
 
 .full-img,
 .prewiew-img {
-    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-info {
     width: 380px;
+    margin-top: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info ul {
+    padding: 0;
+}
+
+.product-info li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.product-info li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.product-info p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.product-info h3 {
+    font-size: 24px;
+    line-height: 30px;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.product-article {
+    color: #aeaeae;
+}
+
+.product-price {
+    width: 182px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price b {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e5e5e5;
+}
+
+.product-price .button {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.product-photo-full {
+    margin: 0;
 }
