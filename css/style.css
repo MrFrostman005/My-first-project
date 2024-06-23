@@ -1024,6 +1024,51 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
+.modal-map {
+    top: 50%;
+    left: 50%;
+
+    display: none;
+
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+
+    border: 7px solid white;
+}
+
+.modal-map p {
+    margin: 0;
+
+    display: none;
+}
+
+.modal-show {
+    display: block;
+
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+    0%  {transform: translateY(-2000px);}
+    70%  {transform: translateY(30px);}
+    90%  {transform: translateY(-10px);}
+    100%  {transform: translateY(0);}
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
+
+@keyframes shake {
+   0%, 100% {transform: translateX(0);}
+   10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+   20%, 40%, 60%, 80% {transform: translateX(10px);} 
+}
+
 .modal-close {
     position: absolute;
 
@@ -1059,24 +1104,6 @@ input[type="radio"].visually-hidden {
 } 
 .modal-close::after {
     transform: rotate(-45deg);
-}
-
-.modal-map {
-    top: 50%;
-    left: 50%;
-
-    display: none;
-
-    width: 766px;
-    height: 561px;
-    margin-top: -280px;
-    margin-left: -390px;
-
-    border: 7px solid white;
-}
-
-.modal-map p {
-    margin: 0;
 }
 
 /* Стили страницы прайс листа */
@@ -1252,7 +1279,6 @@ input[type="radio"].visually-hidden {
 .product-info {
     width: 380px;
     margin-top: 12px;
-
     display: flex;
     flex-direction: column;
 }
